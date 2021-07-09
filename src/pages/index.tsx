@@ -1,4 +1,13 @@
-import { Box, Container, Heading, Image, Text } from '@chakra-ui/react';
+import {
+  Box,
+  Container,
+  Heading,
+  Image,
+  Text,
+  HStack,
+  Flex,
+  VStack
+} from '@chakra-ui/react';
 import Head from 'next/head';
 
 import { Header } from '../components';
@@ -50,6 +59,41 @@ export default function Home() {
           />
         </Container>
       </Box>
+
+      <Container maxW="container.xl" mt="5rem">
+        <HStack justifyContent="space-between">
+          <VStack>
+            <Image src="/images/icons/cocktail.svg" />
+            <Text color="dark.heading" fontWeight="semibold" mt="2">
+              vida noturna
+            </Text>
+          </VStack>
+          <VStack>
+            <Image src="/images/icons/surf.svg" />
+            <Text color="dark.heading" fontWeight="semibold" mt="2">
+              praia
+            </Text>
+          </VStack>
+          <VStack>
+            <Image src="/images/icons/building.svg" />
+            <Text color="dark.heading" fontWeight="semibold" mt="2">
+              moderno
+            </Text>
+          </VStack>
+          <VStack>
+            <Image src="/images/icons/museum.svg" />
+            <Text color="dark.heading" fontWeight="semibold" mt="2">
+              clássico
+            </Text>
+          </VStack>
+          <VStack>
+            <Image src="/images/icons/earth.svg" />
+            <Text color="dark.heading" fontWeight="semibold" mt="2">
+              e mais
+            </Text>
+          </VStack>
+        </HStack>
+      </Container>
     </>
   );
 }
