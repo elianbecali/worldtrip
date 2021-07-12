@@ -1,16 +1,16 @@
 import {
   Box,
   Container,
+  Divider,
   Heading,
   Image,
   Text,
   HStack,
-  Flex,
   VStack
 } from '@chakra-ui/react';
 import Head from 'next/head';
 
-import { Header } from '../components';
+import { Header, Slider } from '../components';
 
 export default function Home() {
   return (
@@ -89,10 +89,32 @@ export default function Home() {
           <VStack>
             <Image src="/images/icons/earth.svg" />
             <Text color="dark.heading" fontWeight="semibold" mt="2">
-              e mais
+              e mais...
             </Text>
           </VStack>
         </HStack>
+
+        <Divider
+          borderWidth={2}
+          width={90}
+          mx="auto"
+          borderColor="dark.heading"
+          mt="5rem"
+        />
+
+        <Text
+          textAlign="center"
+          fontWeight="medium"
+          fontSize="2.3rem"
+          lineHeight="3.3rem"
+          color="dark.heading"
+          mt="3.3rem"
+        >
+          Vamos nessa? <br />
+          Então escolha seu continente
+        </Text>
+
+        <Slider />
       </Container>
     </>
   );
