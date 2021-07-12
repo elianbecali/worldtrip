@@ -1,4 +1,5 @@
+import { Banner } from './Banner';
 import { Header } from './Header';
 import { Slider } from './Slider';
 
-export { Header, Slider };
+export { Banner, Header, Slider };
