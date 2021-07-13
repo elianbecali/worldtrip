@@ -27,7 +27,7 @@ export default function Home() {
         <Text
           textAlign="center"
           fontWeight="medium"
-          fontSize="2.3rem"
+          fontSize={['1.25rem', '2.25rem']}
           lineHeight="3.3rem"
           color="dark.heading"
           mt="3.3rem"
@@ -35,9 +35,9 @@ export default function Home() {
           Vamos nessa? <br />
           Então escolha seu continente
         </Text>
-
-        <Slider />
       </Container>
+
+      <Slider />
     </>
   );
 }
