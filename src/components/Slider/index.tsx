@@ -44,7 +44,7 @@ export function Slider() {
                 textAlign="center"
                 zIndex="overlay"
               >
-                <Link href="/continent">
+                <Link href="/continent/europa">
                   <a>
                     <Heading
                       as="h3"
